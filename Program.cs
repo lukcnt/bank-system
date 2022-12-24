@@ -8,6 +8,19 @@ Console.WriteLine("Welcome to Cantoni Bank!\n"+
 
 choice = Convert.ToInt32(Console.ReadLine());
 
+if (choice == 1)
+{
+  // Send to Login screen
+}
+else if (choice == 2)
+{
+  // Send to new account screen
+}
+else
+{
+  // Exit the program
+}
+
 /* To do
   1 - Create the system login
   2 - Create the system menu
