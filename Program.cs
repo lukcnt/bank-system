@@ -1,5 +1,7 @@
 ﻿Console.WriteLine("Welcome to Cantoni Bank!\n"+
-                  "Choose one option below:");
+                  "Are you already a client of our bank? Choose one option below:\n"+
+                  "1 - Yes\n"+
+                  "2 - No\n");
 
 /* To do
   1 - Create the system login
