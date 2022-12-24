@@ -1,5 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿Console.WriteLine("Welcome to Cantoni Bank!\n"+
+                  "Choose one option below:");
 
 /* To do
   1 - Create the system login
