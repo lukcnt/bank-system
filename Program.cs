@@ -1,7 +1,12 @@
-﻿Console.WriteLine("Welcome to Cantoni Bank!\n"+
-                  "Are you already a client of our bank? Choose one option below:\n"+
-                  "1 - Yes\n"+
-                  "2 - No\n");
+﻿int choice;
+
+Console.WriteLine("Welcome to Cantoni Bank!\n"+
+                  "Choose one option below:\n"+
+                  "1 - Login\n"+
+                  "2 - Create an account\n"+
+                  "3 - Exit");
+
+choice = Convert.ToInt32(Console.ReadLine());
 
 /* To do
   1 - Create the system login
