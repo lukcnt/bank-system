@@ -12,6 +12,23 @@
       password = Console.ReadLine();
     }
 
+    public static void NewAccount()
+    {
+      string? id;
+      string? password;
+      string? passwordConfirmed;
+      string? pin;
+
+      Console.WriteLine("Enter a CPF or a CNPJ:");
+      id = Console.ReadLine();
+      Console.WriteLine("Enter a password:");
+      password = Console.ReadLine();
+      Console.WriteLine("Confirm the password:");
+      passwordConfirmed = Console.ReadLine();
+      Console.WriteLine("Enter a PIN:");
+      pin = Console.ReadLine();
+    }
+
     private static void Main(string[] args)
     {
         int choice;
@@ -32,6 +49,7 @@
         else if (choice == 2)
         {
             // Send to new account screen
+            NewAccount();
         }
         else
         {
