@@ -31,31 +31,36 @@
 
     private static void Main(string[] args)
     {
-        int choice;
+      bool systemOn = true;
 
-        Console.WriteLine("Welcome to Cantoni Bank!\n" +
-                          "Choose one option below:\n" +
-                          "1 - Login\n" +
-                          "2 - Create an account\n" +
-                          "3 - Exit");
+      do
+      {
+          int choice;
 
-        choice = Convert.ToInt32(Console.ReadLine());
+          Console.WriteLine("Welcome to Cantoni Bank!\n" +
+                            "Choose one option below:\n" +
+                            "1 - Login\n" +
+                            "2 - Create an account\n" +
+                            "3 - Exit");
 
-        if (choice == 1)
-        {
-            // Send to Login screen
-            Login();
-        }
-        else if (choice == 2)
-        {
-            // Send to new account screen
-            NewAccount();
-        }
-        else
-        {
-            // Exit the program
-            System.Environment.Exit(0);
-        }
+          choice = Convert.ToInt32(Console.ReadLine());
+
+          if (choice == 1)
+          {
+              // Send to Login screen
+              Login();
+          }
+          else if (choice == 2)
+          {
+              // Send to new account screen
+              NewAccount();
+          }
+          else
+          {
+              // Exit the program
+              System.Environment.Exit(0);
+          }
+      } while (systemOn);
     }
 }
 
