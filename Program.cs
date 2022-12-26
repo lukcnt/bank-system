@@ -54,6 +54,7 @@
         else
         {
             // Exit the program
+            System.Environment.Exit(0);
         }
     }
 }
