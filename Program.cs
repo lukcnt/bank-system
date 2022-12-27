@@ -1,4 +1,6 @@
-﻿internal class Program
+﻿using bank_system.Models;
+
+internal class Program
 {
     public static void Login()
     {
