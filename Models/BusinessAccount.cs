@@ -7,6 +7,6 @@ namespace bank_system.Models
 {
     public class BusinessAccount : Account
     {
-        
+        public string Cnpj { get; set; }
     }
 }
