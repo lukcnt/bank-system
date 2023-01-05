@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.4.33122.133
+VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bank-system-api", "bank-system-api\bank-system-api.csproj", "{6407121F-54B9-45A7-9922-AC03A878CF25}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bank-system-api", "bank-system-api\bank-system-api.csproj", "{0B20781D-67BC-44FD-A46F-E7C4DC652E06}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6407121F-54B9-45A7-9922-AC03A878CF25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6407121F-54B9-45A7-9922-AC03A878CF25}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6407121F-54B9-45A7-9922-AC03A878CF25}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6407121F-54B9-45A7-9922-AC03A878CF25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B20781D-67BC-44FD-A46F-E7C4DC652E06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B20781D-67BC-44FD-A46F-E7C4DC652E06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B20781D-67BC-44FD-A46F-E7C4DC652E06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B20781D-67BC-44FD-A46F-E7C4DC652E06}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {CBD9D78F-EF93-4A31-8A0B-FD3AB5EB97BA}
+		SolutionGuid = {BD302769-13BE-4B72-B362-956F63396FE7}
 	EndGlobalSection
 EndGlobal
