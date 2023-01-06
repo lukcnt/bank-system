@@ -132,8 +132,9 @@ namespace bank_system_api.Services.Implementations
                 CreatePinHash(Pin, out pinHash, out pinSalt);
 
                 accountToBeUpdated.PinStoredHash = pinHash;
-                accountToBeUpdated.PinStoredSalt = pinSalt;
+                accountToBeUpdated.PinStoredSalt = pinSalt;                
             }
+            accountToBeUpdated.DateLastUpdated = DateTime.Now;
 
             _dbContext.Accounts.Update(accountToBeUpdated);
             _dbContext.SaveChanges();
