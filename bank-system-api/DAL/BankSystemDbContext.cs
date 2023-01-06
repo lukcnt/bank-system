@@ -7,17 +7,14 @@ using System.Threading.Tasks;
 
 namespace bank_system_api.DAL
 {
-    public class BankSystemDbContext
+    public class BankSystemDbContext : DbContext
     {
-        public class MyDbContext : DbContext
+        public BankSystemDbContext(DbContextOptions<BankSystemDbContext> options) : base(options)
         {
-            public MyDbContext(DbContextOptions<MyDbContext> options) : base(options)
-            {
 
-            }
-
-            public DbSet<Account> Accounts { get; set; }
-            public DbSet<Transaction> Transactions { get; set; }
         }
+
+        public DbSet<Account> Accounts { get; set; }
+        public DbSet<Transaction> Transactions { get; set; }
     }
 }

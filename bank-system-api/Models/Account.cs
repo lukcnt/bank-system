@@ -30,7 +30,6 @@ namespace bank_system_api.Models
         Random rand = new Random();
         public Account()
         {
-            //generrate accountNumber for customer
             AccountNumberGenerated = Convert.ToString((long)Math.Floor(rand.NextDouble() * 9_000_000_000L + 1_000_000_000L));
         }
 
