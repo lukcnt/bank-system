@@ -1,5 +1,7 @@
 using bank_system_api.DAL;
 using bank_system_api.Models;
+using bank_system_api.Services.Implementations;
+using bank_system_api.Services.Interfaces;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -31,6 +33,8 @@ namespace bank_system_api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<BankSystemDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("BankSystemDbConnection")));
+            services.AddScoped<IAccountService, AccountService>();
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
@@ -53,6 +57,14 @@ namespace bank_system_api
             app.UseRouting();
 
             app.UseAuthorization();
+
+            //app.UseSwagger();
+
+            //app.UseSwaggerUI(x =>
+            //{
+            //    var prefix = string.IsNullOrEmpty(x.RoutePrefix) ? "." : "..";
+            //    x.SwaggerEndpoint($"{prefix}/swagger/v1/swagger.json", "")
+            //});
 
             app.UseEndpoints(endpoints =>
             {
