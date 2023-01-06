@@ -34,6 +34,7 @@ namespace bank_system_api
         {
             services.AddDbContext<BankSystemDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("BankSystemDbConnection")));
             services.AddScoped<IAccountService, AccountService>();
+            services.AddScoped<ITransactionService, TransactionService>();
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             services.AddControllers();
             services.AddSwaggerGen(c =>
