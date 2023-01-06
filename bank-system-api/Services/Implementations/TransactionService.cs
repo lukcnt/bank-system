@@ -99,8 +99,7 @@ namespace bank_system_api.Services.Implementations
             transaction.TransactionParticulars = @$"NEW TRANSACTION FROM SOURCE {JsonConvert.SerializeObject
                 (transaction.TransactionSourceAccount)} TO DESTINATION ACCOUNT => {JsonConvert.SerializeObject
                 (transaction.TransactionDestinationAccount)} ON DATE => {transaction.TransactionDate} FOR AMOUNT => {JsonConvert.SerializeObject
-                (transaction.TransactionAmount)} TRANSACTION TYPE => {JsonConvert.SerializeObject(transaction.TransactionType)} TRANSACTION STATUS
-                => {JsonConvert.SerializeObject(transaction.TransactionStatus)}";
+                (transaction.TransactionAmount)} TRANSACTION TYPE => {transaction.TransactionType} TRANSACTION STATUS => {transaction.TransactionStatus}";
 
             _dbContext.Transactions.Add(transaction);
             _dbContext.SaveChanges();
@@ -155,8 +154,7 @@ namespace bank_system_api.Services.Implementations
             transaction.TransactionParticulars = @$"NEW TRANSACTION FROM SOURCE {JsonConvert.SerializeObject
                 (transaction.TransactionSourceAccount)} TO DESTINATION ACCOUNT => {JsonConvert.SerializeObject
                 (transaction.TransactionDestinationAccount)} ON DATE => {transaction.TransactionDate} FOR AMOUNT => {JsonConvert.SerializeObject
-                (transaction.TransactionAmount)} TRANSACTION TYPE => {JsonConvert.SerializeObject(transaction.TransactionType)} TRANSACTION STATUS
-                => {JsonConvert.SerializeObject(transaction.TransactionStatus)}";
+                (transaction.TransactionAmount)} TRANSACTION TYPE => {transaction.TransactionType} TRANSACTION STATUS => {transaction.TransactionStatus}";
 
             _dbContext.Transactions.Add(transaction);
             _dbContext.SaveChanges();
@@ -211,8 +209,7 @@ namespace bank_system_api.Services.Implementations
             transaction.TransactionParticulars = @$"NEW TRANSACTION FROM SOURCE {JsonConvert.SerializeObject
                 (transaction.TransactionSourceAccount)} TO DESTINATION ACCOUNT => {JsonConvert.SerializeObject
                 (transaction.TransactionDestinationAccount)} ON DATE => {transaction.TransactionDate} FOR AMOUNT => {JsonConvert.SerializeObject
-                (transaction.TransactionAmount)} TRANSACTION TYPE => {JsonConvert.SerializeObject(transaction.TransactionType)} TRANSACTION STATUS
-                => {JsonConvert.SerializeObject(transaction.TransactionStatus)}";
+                (transaction.TransactionAmount)} TRANSACTION TYPE => {transaction.TransactionType} TRANSACTION STATUS => {transaction.TransactionStatus}";
 
             _dbContext.Transactions.Add(transaction);
             _dbContext.SaveChanges();
