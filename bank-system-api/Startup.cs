@@ -2,6 +2,7 @@ using bank_system_api.DAL;
 using bank_system_api.Models;
 using bank_system_api.Services.Implementations;
 using bank_system_api.Services.Interfaces;
+using bank_system_api.Utils;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -36,6 +37,7 @@ namespace bank_system_api
             services.AddScoped<IAccountService, AccountService>();
             services.AddScoped<ITransactionService, TransactionService>();
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+            services.Configure<AppSettings>(Configuration.GetSection("AppSettings"));
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
