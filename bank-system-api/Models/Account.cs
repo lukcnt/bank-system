@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
+using System.Security.Principal;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
@@ -21,6 +22,7 @@ namespace bank_system_api.Models
         public DateTime DateCreated { get; set; }
         public DateTime DateLastUpdated { get; set; }
         public decimal CurrentAccountBalance { get; set; }
+        public AccountType AccountType { get; set; }
         
         [JsonIgnore]
         public byte[] PinStoredHash { get; set; }
@@ -33,5 +35,13 @@ namespace bank_system_api.Models
             AccountNumberGenerated = Convert.ToString((long)Math.Floor(rand.NextDouble() * 9_000_000_000L + 1_000_000_000L));
         }
 
+    }
+
+    public enum AccountType
+    {
+        Savings,
+        Current,
+        Corporate,
+        Government
     }
 }
