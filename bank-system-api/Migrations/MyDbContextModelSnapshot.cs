@@ -8,7 +8,7 @@ using bank_system_api.DAL;
 
 namespace bank_system_api.Migrations
 {
-    [DbContext(typeof(BankSystemDbContext.MyDbContext))]
+    [DbContext(typeof(BankSystemDbContext))]
     partial class MyDbContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

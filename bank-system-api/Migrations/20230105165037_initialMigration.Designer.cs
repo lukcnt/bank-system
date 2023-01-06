@@ -9,7 +9,7 @@ using bank_system_api.DAL;
 
 namespace bank_system_api.Migrations
 {
-    [DbContext(typeof(BankSystemDbContext.MyDbContext))]
+    [DbContext(typeof(BankSystemDbContext))]
     [Migration("20230105165037_initialMigration")]
     partial class initialMigration
     {
