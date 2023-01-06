@@ -74,7 +74,7 @@ namespace bank_system_api.Controllers
             return Ok(cleanedAccount);
         }
 
-        [HttpPost]
+        [HttpPut]
         [Route("update_account")]
         public IActionResult UpdateAccount([FromBody] UpdateAccountModel model)
         {
