@@ -1,2 +1,2 @@
 # Bank System API
-A banking system with the functions of creating a new account, requesting a balance, depositing, withdrawing and managing the account.
+A banking system API with the functions of creating a new account, depositing, withdraw and making transfers.
